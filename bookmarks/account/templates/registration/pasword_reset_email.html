@@ -1,0 +1,4 @@
+Кто-то запросил восстановление пароль по электронной почте {{ email }}. Пройдите по ссылке снизу:
+{{ protocol }}://{{ domain }}{% url "password_reset_confirm" uidb64=uid
+token=token %}
+Ваше имя, на случай если вы забыли: {{ user.get_username }}
